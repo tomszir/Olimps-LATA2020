@@ -1,3 +1,3 @@
-# TypeScript React Boilerplate
+# Tripoo
 
-A simple boilerplate.
+Simple travel application prototype.
