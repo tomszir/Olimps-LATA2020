@@ -1,6 +1,5 @@
 const merge = require('webpack-merge');
 
-const MinifyPlugin = require('babel-minify-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const DuplicateCheckerPlugin = require('duplicate-package-checker-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
@@ -35,8 +34,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new DuplicateCheckerPlugin(),
-    new BundleAnalyzerPlugin(),
-    new MinifyPlugin(),
     new CompressionPlugin(),
+    new BundleAnalyzerPlugin(),
   ],
 });
